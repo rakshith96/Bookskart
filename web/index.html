@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CPaaS</title>
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <h1>CPaaS Portal</h1>
+    <div id="stage1">
+     <h2>App Config</h2>
+     <form>
+       <input type="file" id="configFile" required/><br/>
+       <input type="submit" value="Upload"/>
+     </form>
+    </div>
+    <div id="stage2" class="hidden">
+      <h2>Role Upload</h2>
+      <h3 class="appName"></h3>
+      <form></form>
+    </div>
+    <div id="stage3" class="hidden">
+       <h2>Deploy App</h2>
+       <h3 class="appName"></h3>
+       <button id="deploy">Deploy</button>
+       <h3 id="appUrl"></h3>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
+
